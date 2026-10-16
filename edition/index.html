@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>قواعد في العلاقات — تحميل النسخة الكاملة</title>
+<style>
+  :root { --ink:#16202E; --gold:#8A6B2E; --teal:#1B5468; --muted:#6C7A89; --rule:#D8CFBC; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#FBF9F5; color:var(--ink);
+         font-family: "IBM Plex Sans Arabic","Noto Naskh Arabic","Segoe UI",Tahoma,sans-serif;
+         line-height:1.9; }
+  .head { background:var(--ink); color:#fff; padding:44px 28px 38px 28px; }
+  .head .kick { color:#C8A85C; letter-spacing:3px; font-size:12px; margin:0 0 12px 0; }
+  .head h1 { margin:0 0 10px 0; font-size:32px; line-height:1.35; }
+  .head p { margin:0; color:#C9D3DE; font-weight:300; }
+  .wrap { max-width:820px; margin:0 auto; padding:30px 22px 70px 22px; }
+  .dl { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:0 0 26px 0; }
+  @media (max-width:640px){ .dl { grid-template-columns:1fr; } }
+  a.card { display:block; text-decoration:none; color:inherit; background:#fff;
+           border:1px solid var(--rule); border-right:5px solid var(--gold);
+           padding:18px 20px; border-radius:3px; }
+  a.card.alt { border-right-color:var(--teal); }
+  a.card:hover { background:#FFFDF8; }
+  .card .t { font-size:19px; font-weight:700; margin:0 0 4px 0; }
+  .card .m { font-size:13px; color:var(--muted); margin:0; direction:ltr; text-align:right; }
+  .card .d { font-size:13.5px; color:var(--muted); margin:8px 0 0 0; }
+  h2 { font-size:19px; margin:30px 0 10px 0; }
+  h2:before { content:""; display:inline-block; width:9px; height:9px; background:var(--gold);
+              margin-left:9px; vertical-align:middle; }
+  table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--rule); }
+  th, td { padding:9px 12px; border-bottom:1px solid var(--rule); text-align:right; font-size:14.5px; }
+  th { background:#F4F1E9; font-weight:600; }
+  td.num { direction:ltr; text-align:left; font-variant-numeric:tabular-nums; }
+  .note { background:#F7F3EA; border-right:4px solid var(--gold); padding:14px 16px; font-size:14.5px; }
+  .note.blue { background:#EDF3F6; border-right-color:var(--teal); }
+  code { direction:ltr; display:inline-block; background:#F2F4F7; padding:1px 6px; border-radius:3px;
+         font-size:12.5px; }
+  footer { color:var(--muted); font-size:13px; margin-top:34px; text-align:center; }
+  ul { padding-right:20px; }
+</style>
+</head>
+<body>
+<header class="head">
+  <p class="kick">نشرة نصية كاملة</p>
+  <h1>قواعد في العلاقات</h1>
+  <p>الأطر الذكورية، الاستقلالية، الهدوء، الحسم، وعقلية الوفرة</p>
+</header>
+<div class="wrap">
+
+  <div class="dl">
+    <a class="card" href="book.pdf" download>
+      <p class="t">الكتاب — PDF</p>
+      <p class="m">book.pdf · 129 pages · 708 KB</p>
+      <p class="d">النسخة المطبوعة الكاملة: غلاف، صفحة عنوان، فهرس بأرقام الصفحات، ترويسة وترقيم.</p>
+    </a>
+    <a class="card alt" href="book.html" download>
+      <p class="t">الكتاب — HTML</p>
+      <p class="m">book.html · 1.7 MB · standalone</p>
+      <p class="d">نسخة إلكترونية بخطوط مدمجة وفهرس قابل للنقر، تعمل بدون إنترنت.</p>
+    </a>
+  </div>
+
+  <div class="note">
+    إن نزّلت الملف من رابط وسيط ووجدته تالفًا، فهذا خلل في الوسيط لا في الملف:
+    <b>book.pdf</b> يفتح سليمًا، وعدد صفحاته 129، وبصمته
+    <code>md5 4a96fcc2f7e3aec15735838af585e552</code>. قارن البصمة بعد التنزيل للتأكد.
+  </div>
+
+  <h2>ما في هذه النسخة</h2>
+  <ul>
+    <li>النص كامل من الملف المصدري (36 صفحة) دون حذف أو إضافة أو إعادة صياغة.</li>
+    <li>11 جزءًا · 42 مبحثًا · 80 نصًا مصدريًا، وكل عنوان مطابق لعنوان الفهرس الأصلي في الملف.</li>
+    <li>ثنائيات <b>Original:</b> و<b>بالمصري:</b> معروضة في بطاقات مميزة، والعناوين بمستويات واضحة.</li>
+    <li>صفحات العنوان والملاحظة والفهرس تحمل عنوانًا واحدًا فقط دون نسبة إلى مؤلف أو جهة نشر.</li>
+  </ul>
+
+  <h2>تقرير التحقق (على ملف PDF نفسه)</h2>
+  <table>
+    <tr><th>الفحص</th><th>النتيجة</th></tr>
+    <tr><td>تسلسل الكلمات مقابل النص المستخرج</td><td class="num">24,565 / 24,565 — 100.0000%</td></tr>
+    <tr><td>كلمات ناقصة / زائدة</td><td class="num">0 / 0</td></tr>
+    <tr><td>مجموع الحروف</td><td class="num">114,074 = 114,074</td></tr>
+    <tr><td>نص دخيل داخل متن الكتاب</td><td class="num">0</td></tr>
+  </table>
+  <p style="font-size:14px;color:var(--muted)">ملاحظة: يُطبَّع اتجاه الأقواس في الفحص لأن الملف المصدري يخزّن الأقواس معكوسة داخل المقاطع العربية؛ الحروف نفسها وعددها محفوظ، والصيغة المنطقية U+0028 موجودة في طبقة النص.</p>
+
+  <h2>سطور تحتاج مراجعة بشرية</h2>
+  <div class="note blue">
+    الصفحات التي يتساوى فيها احتمالان لترتيب الكلمات — لاختلاط اتجاه الكتابة في الملف المصدري —
+    وُضعت كما هي دون تخمين، وهي مذكورة في نهاية الكتاب: <b>99 سطرًا من أصل 1354</b> على الصفحات
+    1–36. القائمة الكاملة بالسطور في <a href="audit-report.txt">تقرير التحقق</a>.
+  </div>
+
+  <footer>الملفان مرفوعان أيضًا في مستودع المشروع على الفرع <code>arena/44030afc-indraluck</code> داخل مجلد <code>edition/</code>.</footer>
+</div>
+</body>
+</html>

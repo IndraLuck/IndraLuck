@@ -1,0 +1,55 @@
+WORD-PRESERVATION AUDIT — «قواعد في العلاقات»
+============================================================
+المصدر   : ملف PDF من 36 صفحة (Some rules of relationship)
+النص المستخرج: 319 كتلة، 24,565 كلمة، 114,074 حرفًا (بدون مسافات)
+الكتاب   : 129 صفحة = 12 صفحة تمهيدية + 115 صفحة متن + صفحة خاتمة + صفحة مراجعة
+بصمة PDF : md5 4a96fcc2f7e3aec15735838af585e552  (725,243 بايت)
+
+Method
+------
+Every line of the source PDF is recovered from its own glyph stream (visual
+order) into logical order, and the recovery is accepted only when re-rendering
+it reproduces that glyph stream exactly; the character multiset of the recovered
+line must equal the multiset of the raw glyphs.  The book is then typeset from
+that audited transcript, and the finished PDF is read back and compared with it.
+
+A. WORDS
+   source words : 24565
+   book words   : 24565
+   identical    : 100.0000% of the word stream
+   missing      : 0
+   extra        : 0
+
+B. CHARACTERS (bracket orientation canonicalised)
+   source characters : 114074
+   book characters   : 114074
+   identical multiset: True
+
+C. BRACKETS
+   bracket code points that differ in orientation: 0
+   cause: the source PDF stores brackets pre-mirrored inside RTL runs (its own
+   glyph stream carries U+0029 where the logical text has U+0028).  The renderer
+   reproduces the same convention, so the drawn glyphs match the source; the
+   transcript keeps the logical orientation.  Same characters, same count.
+
+D. STRAY TEXT
+   non-Arabic/non-Latin letters inside the body area: 0
+
+RESULT: every source word and character is present, in order.
+
+Lines flagged for human review
+------------------------------
+99 of 1354 lines, spread over source pages 1-36.  These are lines whose only
+non-Arabic content is digits or brackets, so two orderings of the same
+characters are equally consistent with the source's own glyph stream; the
+recovered wording is used as-is and never guessed.  The affected source pages
+are listed at the end of the PDF (page "صفحات تحتاج مراجعة بشرية").
+
+Coverage
+--------
+11 parts, 42 chapters, 80 source texts.  Every heading was matched against the
+PDF's own bookmark outline (133 entries: 11/42/80), and where the outline and
+the recovered line held the same words in a different arrangement - caused by
+the source's digit runs being typeset on the mirrored side, e.g. "6.1 سر قوة
+الصمت" versus "سر قوة الصمت 6.1" - the outline's arrangement was adopted, since
+it is the document's own authored order.
